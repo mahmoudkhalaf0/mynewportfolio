@@ -1,0 +1,257 @@
+$float-left: right;
+$float-right: left;
+$over-color : rgba(0, 0, 0, 0.9);
+$main-color :rgb(253, 182, 100);
+$main-padding : 50px;
+
+.header {
+
+    font-family: 'Tajawal', sans-serif;
+    @media (max-width:767px) {
+        height: 500px;
+    }
+    .content {
+        margin-top: 35%;
+        p {
+            font-size: 30px;
+            font-family: 'Harmattan', sans-serif;
+        }
+        h3 {
+            margin-bottom: 10px;
+        }
+       
+        div {
+          font-size: 25px;
+          line-height: 2em;
+        }
+    }
+}
+//end header
+
+// start about me
+.about {
+    font-family: 'Tajawal', sans-serif;
+    height: 630px;
+   
+    @media (max-width:767px) {
+        height: 1025px;
+    }
+    @media(min-width:768px) and (max-width:992px) {
+        height: 650px;
+   }
+    h1 {
+        font-size: 28px
+    }
+    .about-content {
+        .about-image {
+            float: $float-left;
+            padding-left: 5%;
+            padding-right: 0;
+           @media (max-width:767px) {
+                float: none;          
+             }
+            @media (min-width:992px) {
+                float: $float-left;
+                border-left: 2px dotted $main-color;
+                border-right: 0;
+            }
+            @media (min-width:768px)and(max-width:991px) {
+                border-right: 0;
+                width: 30%;
+                padding-left: 5%;
+                border-left: 2px dotted $main-color;
+            }
+        }
+        .about-info {
+            float: $float-left;
+            padding-left: 30px;
+            @media (min-width:768px) {
+                float: $float-left;
+                width: 70%;
+                padding-right: 30px;
+            }
+            @media (min-width:768px)and(max-width:991px) {
+                width: 70%;
+            }
+            .info {
+                padding-top: 50PX;
+                h3 {
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 18px;
+                }
+            }
+            .connect {
+                 div {
+                     float: $float-left;
+                     &:nth-of-type(2){
+                         padding-right: 5px;
+                        p{
+                             @media (min-width:768px) {
+                                font-size: 10px;
+                            }
+                            @media(min-width:768px) and (max-width:992px) {
+                                font-size: 8px;
+                            }
+                        }
+                     }
+                }
+            }
+        }
+    }
+}
+// end about me
+.skills {
+    font-family: 'Open Sans Condensed', sans-serif;
+    h1 {
+        font-size: 28px
+    }
+}
+.services {
+    height: 680PX;
+    font-family: 'Tajawal', sans-serif;
+    @media (max-width:768px) {
+        height:1500px ;
+    }
+    @media (min-width:768px)and(max-width:991px) {
+        height: 920px;
+    }
+    h1 {
+        font-size: 28px
+    }
+    .content {
+        
+        .service {
+            float: $float-left;
+            h3 {
+                font-size: 21px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+}
+//end services
+
+
+//start works 
+.works {
+    font-family: 'Tajawal', sans-serif;
+
+    h1 {
+        font-size: 28px
+    }
+    
+    .content {
+        ul {
+            li {
+                font-size: 20px;
+            }
+        }
+       .projects {
+            .project {
+                float: $float-left;
+                margin-right: 2.3%;
+                @media (max-width:768px) {
+                    width: 100%;
+                    float: none;
+                }
+                @media (min-width:768px)and(max-width:991px) {
+                    width: 46%;
+                    float: $float-left;
+                    margin-right: 2%;
+                    margin-left: 2%;
+                }
+                @media (min-width:992px) {
+                    float: $float-left;
+                    width: 31%;
+                }
+                a {
+                    i {
+                        right: -90px;
+                    }
+                }
+                p {
+                    right: 270px;
+                    font-size: 18px;     
+                    font-weight: 400;
+                    padding-top: 10px;
+                    @media (max-width:768px) {
+                        right: 600px;
+                    }
+                    @media (min-width:768px)and(max-width:991px) {
+                        right: 321px;
+                    }   
+                }
+                &:hover p{
+                    right: 50px;
+                    @media (max-width:768px) {
+                        right: 170px;
+                    }
+                    @media (min-width:768px)and(max-width:991px) {
+                        right: 75px;
+                    }
+                }
+                &:hover i {
+                    right: 95px;
+                    @media (max-width:768px) {
+                        right: 210px;
+                    }
+                    @media (min-width:768px)and(max-width:991px) {
+                        right: 120px;
+                    }
+                }
+            }
+        }
+    }
+}
+//end works
+.connect-me {
+    font-family: 'Tajawal', sans-serif;
+
+    h1 {
+        font-size: 28px
+    }
+}
+//end works
+
+//start footer
+.footer {
+    font-family: 'Tajawal', sans-serif;
+
+    p {
+        font-size: 19px;
+        padding: 3px;
+        i {
+            color: red;
+            animation: pop .6s ease-in-out infinite;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+//end footer
+
+//start menu
+.menu {
+    font-family: 'Tajawal', sans-serif;
+
+    ul {
+        text-align: right;
+        li {
+            padding: 5px 0px 5px;
+            font-size: 18px;
+        }  
+    }
+}
+
+.menu-tab {
+    
+    span {
+        margin-right: 5px;
+    }
+}

@@ -1,0 +1,50 @@
+.container {
+    width: 932px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: auto;
+    @media  (max-width:767px) {
+            width: 540px;
+    }
+    @media (min-width:768px) {
+            width: 700px;
+    }
+    @media (min-width:992px) {
+            width: 850px;
+    }
+    @media (min-width:1200px) {
+        width:1050px
+    }
+}
+.over {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:$over-color;
+}
+
+.typed-cursor {
+    display:none
+}
+
+.head {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    margin: 5px auto;
+    border-radius: 15px;
+    background-color: $main-color;
+    text-align: center;
+}
+
+.active {
+    background-color: #fff !important;
+    color: #000;
+    text-align: center;
+    transition: all .4s ease-in-out ;
+    border:1px solid #000;
+}
